@@ -16,7 +16,7 @@ import Alert from '../alert'
 
 // Eslint doesn't recognize forwardRef
 // eslint-disable-next-line react/display-name
-const Form = forwardRef((_props, ref: Ref<IFormRef>) => {
+const Form = forwardRef((_: object, ref: Ref<IFormRef>) => {
 	const [message, setMessage] = useState<IError>()
 	const [patient, setPatient] = useState<AddPatientType>({
 		_id: '',
